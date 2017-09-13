@@ -26,7 +26,7 @@ for cfile in glob.glob('DIAMOND_db/*.dmnd'):
     output, error = process.communicate()
     #print output
     
-    bashCommand = '/Users/thomashitch/Programs/diamond-master/diamond view -a ' + novel_genome.split('/')[1] + '-OUTPUT/' + cfile.split('/')[2].split('.')[0] + '-RAN -o ' + novel_genome.split('/')[1] + '-OUTPUT/' + cfile.split('/')[2].split('.')[0] + '-RAN.m8'
+    bashCommand = 'diamond view -a ' + novel_genome.split('/')[1] + '-OUTPUT/' + cfile.split('/')[2].split('.')[0] + '-RAN -o ' + novel_genome.split('/')[1] + '-OUTPUT/' + cfile.split('/')[2].split('.')[0] + '-RAN.m8'
     process = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
     output, error = process.communicate()    
     
