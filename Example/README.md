@@ -1,6 +1,6 @@
 # Example
 
-This example follows the use of DIAMOND and PROKKA to annotate a novel phage genome using IVON.
+This example follows the use of DIAMOND and Prodigal to annotate a novel phage genome using IVON.
 
 The genome of Ruminococcus flavefaciens 007c was searched using PHASTER (http://phaster.ca/) and identified the genome of an incorporated phage, present in `Ruminococcus_flavefaciens_007c.prophage.1.fasta`. 
 
