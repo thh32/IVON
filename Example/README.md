@@ -9,4 +9,4 @@ Prodigal was utilised within the PROKKA annotation framework to identify the cod
 The CDS file was then used as the query input and annotated against each of the IVON databases using DIAMOND producing the `.daa` files in `DIAMOND_annotations/Raw_output/`. These were converted into standard tabulated output using the `diamond view` command to produce the `.m8` files in `DIAMOND_annotations/Viewed_output/`.
 
 
-The `Viewed_output` folder was then used as input by the `IVON_barcoder.py` script to assign the Ruminococcus flavefaciens 007c phage the IVON barcode of 2.0.0.0.0.0.0.0
+The `Viewed_output` folder was then used as input by the `IVON_barcoder.py` script to assign the Ruminococcus flavefaciens 007c phage the IVON barcode of 2.0.0.0.0.0.0.0. This barcode only had positive identification of a gene against the DNA-directed_DNA_polymerase_complex database, hence a  2 was placed as the first barcode value. The lack of integrase identification suggests this may not actually be a phage and be a false positive identification by PHASTER.
