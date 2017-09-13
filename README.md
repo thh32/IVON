@@ -4,7 +4,7 @@
 IVON is a systematic classification system for viruses. By relying on only the genomic sequence of the query virus and its similarity to known genes (present in custom databases), IVON can assign the query virus a barcode. Each position within the barcoe represents a distinct viral feature from the type of polymerase present to method of interaction with its host. This sequence similarity based approach removes the methodological issues associated with current viral taxonomy such as morphology and host type and instead provides viral groupings based entirely on feature similarity.
 
 ## Installing
-IVON is not a local sequence aligner but a framework for the annotation of viruses. Due to this there is no need for installation, only to download the database files for conversion into databases for your local sequence aligner of choice and the `IVON_barcoder.py` script which allows easy conversion of the annotation files into an IVON barcode.
+IVON is not a program or tool but a framework for the annotation of viruses. Due to this there is no need for installation, only to download the database files for conversion into databases for your local sequence aligner of choice and the `IVON_barcoder.py` script which allows easy conversion of the annotation files into an IVON barcode.
 
 ## Barcode value table
 This table identifies which databases require a match for each of the barcode values to be assigned. This therefore allows researchers to better understand the IVON barcoding system.
