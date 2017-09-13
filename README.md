@@ -15,7 +15,7 @@ import glob
 import sys
 import subprocess
 
-novel_genome = 'GENOME.fasta'
+novel_genome = 'GENOME_CDS.fa'
 
 for cfile in glob.glob('DIAMOND_db/*.dmnd'):
     print 'Comparing genome to... ' + cfile.split('/')[2].replace('.dmnd','')
@@ -31,3 +31,13 @@ for cfile in glob.glob('DIAMOND_db/*.dmnd'):
     output, error = process.communicate()    
     
 ```        
+
+
+Once the genomes coding regions have been annotated against the IVON databases `IVON_barcoder.py` can be run to assign the viral genome an IVON barcode. `IVON_barcoder.py` can be run as shown below;
+
+```
+python IVON_barcoder.py -i GENOME_CDS.fa -f GENOME_CDS.fa-OUTPUT
+
+```
+
+This will then provide a barcode such as `1.0.0.0.1.0.12.0` (barcode for HIV) that can be compared to other barcoded viral species using the `NCBI_viral_species_barcode.txt` file.
