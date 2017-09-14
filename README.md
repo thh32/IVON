@@ -23,15 +23,15 @@ import subprocess
 novel_genome = 'GENOME_CDS.fa'
 
 for cfile in glob.glob('DIAMOND_db/*.dmnd'):
-    print 'Comparing genome to... ' + cfile.split('/')[2].replace('.dmnd','')
+    print 'Comparing genome to... ' + cfile.split('/')[1].replace('.dmnd','')
     sys.stdout.flush()
     needed = cfile.replace('.dmnd','')
-    bashCommand =  'diamond blastx -d ' + needed + ' -q ' + novel_genome + ' -a ' + novel_genome.split('/')[1] + '-OUTPUT/' + cfile.split('/')[2].split('.')[0] + '-RAN '
+    bashCommand =  'diamond blastx -d ' + needed + ' -q ' + novel_genome + ' -a ' + novel_genome + '-OUTPUT/' + cfile.split('/')[1].split('.')[0] + '-RAN '
     process = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
     output, error = process.communicate()
     #print output
     
-    bashCommand = 'diamond view -a ' + novel_genome.split('/')[1] + '-OUTPUT/' + cfile.split('/')[2].split('.')[0] + '-RAN -o ' + novel_genome.split('/')[1] + '-OUTPUT/' + cfile.split('/')[2].split('.')[0] + '-RAN.m8'
+    bashCommand = 'diamond view -a ' + novel_genome + '-OUTPUT/' + cfile.split('/')[1].split('.')[0] + '-RAN -o ' + novel_genome + '-OUTPUT/' + cfile.split('/')[1].split('.')[0] + '-RAN.m8'
     process = subprocess.Popen(bashCommand.split(), stdout=subprocess.PIPE)
     output, error = process.communicate()    
     
