@@ -11,7 +11,7 @@ IVON is a systematic classification system for viruses. By relying on only the g
 ## Installing
 IVON is not a program or tool but a framework for the annotation of viruses. Due to this there is no need for installation, only to download the database files for conversion into databases for your local sequence aligner of choice and the `IVON_barcoder.py` script which allows easy conversion of the annotation files into an IVON barcode.
 
-Before running IVON we suggest you run the `Database_update.sh` script in the `Database` folder using the code `sh Database_update.sh`. This will ensure you have the most up to date versions of each of the databases IVON requires. We also suggest citing the date of download when publishing with IVON so that the exact databases can be retrieved and experiments replicated.
+Before running IVON we suggest you run the `Database_update.sh` script in the `Databases` folder using the code `sh Database_update.sh`. This will ensure you have the most up to date versions of each of the databases IVON requires. We also suggest citing the date of download when publishing with IVON so that the exact databases can be retrieved and experiments replicated.
 
 ## Barcode value table
 This table identifies which databases require a match for each of the barcode values to be assigned. This therefore allows researchers to better understand the IVON barcoding system.
