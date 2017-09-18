@@ -1,5 +1,10 @@
 # IVON: Integrative Viral Ontology Network
 
+
+![alt text](https://raw.githubusercontent.com/thh32/IVON/master/IVON.jpg)
+
+
+
 ## What is IVON?
 IVON is a systematic classification system for viruses. By relying on only the genomic sequence of the query virus and its similarity to known genes (present in custom databases), IVON can assign the query virus a barcode. Each position within the barcoe represents a distinct viral feature from the type of polymerase present to method of interaction with its host. This sequence similarity based approach removes the methodological issues associated with current viral taxonomy such as morphology and host type and instead provides viral groupings based entirely on feature similarity.
 
