@@ -1,4 +1,4 @@
-# IVON: Integrative Viral Ontology Network
+# IVON: Integrated Viral Ontology Network
 
 
 ![alt text](https://raw.githubusercontent.com/thh32/IVON/master/IVON.jpg)
