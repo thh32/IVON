@@ -9,6 +9,9 @@ IVON is not a program or tool but a framework for the annotation of viruses. Due
 ## Barcode value table
 This table identifies which databases require a match for each of the barcode values to be assigned. This therefore allows researchers to better understand the IVON barcoding system.
 
+An example of a barcode is  `1.0.0.0.1.0.12.0` which is the barcode for HIV-1. The first value indicates the presence of an RNA-directed DNA polymerase complex. Each `0` indicates the lack of any identified protein associated with that process, in this case that includes integrase, capsid proteins, tail proteins, host entry and host exit processes. The `1` in the fifth position indicates the presence of a viral envelope and the `12` in the seventh position identifies HIV-1 as interacting with its hsot by modulating host morphology or physiology, negative regulation of viral processes and regulating the hosts viral response. 
+
+
 ## IVON annotation
 For the annotation of a viral genome against the IVON provided databases we suggest using the python code provided below. This script will annotate yours genome using DIAMOND (https://github.com/bbuchfink/diamond), however the script can easily be adapted to run your local sequence aligner (LSA) of choice. 
 
