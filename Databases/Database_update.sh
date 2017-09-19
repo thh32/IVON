@@ -14,7 +14,7 @@ cd ${DATE}_FASTA_files
 
 
 wget "http://www.uniprot.org/uniprot/?query=go%3A%22cytolysis+by+virus+of+host+cell%22&sort=score&format=fasta" -O Cytolysis_by_virus_of_host_cell.fasta 
-wget "http://www.uniprot.org/uniprot/?query=go%3A%22cytolysis+by+virus+via+pore+formation+in+host+cell+membrane%22&sort=score&format=fasta" -O  Cytolysis_by_virus_via_pore_formation_in_host_cell_membrane.fasta
+wget "http://www.uniprot.org/uniprot/?query=go%3A%22cytolysis+by+virus+of+host+cell%22&sort=score&format=fasta" -O  Cytolysis_by_virus_via_pore_formation_in_host_cell_membrane.fasta
 wget "http://www.uniprot.org/uniprot/?query=go%3A%22DNA-directed+DNA+polymerase%22&sort=score&format=fasta" -O  DNA-directed_DNA_polymerase_complex.fasta
 wget "http://www.uniprot.org/uniprot/?query=go%3A%22DNA-directed+RNA+polymerase%22&sort=score&format=fasta" -O  DNA-directed_RNA_polymerase_complex.fasta
 wget "http://www.uniprot.org/uniprot/?query=go%3A%22DNA+polymerase+activity%22&sort=score&format=fasta" -O  DNA_polymerase_activity.fasta
