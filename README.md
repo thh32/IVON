@@ -16,7 +16,7 @@ Before running IVON on novel genomes we suggest you running the `Database_update
 ## Barcode value table
 This table identifies which databases require a match for each of the barcode values to be assigned. This therefore allows researchers to better understand the IVON barcoding system.
 
-An example of a barcode is  `1.0.0.0.1.0.12.0` which is the barcode for HIV-1. The first value indicates the presence of an RNA-directed DNA polymerase complex. Each `0` indicates the lack of any identified protein associated with that process, in this case that includes integrase, capsid proteins, tail proteins, host entry and host exit processes. The `1` in the fifth position indicates the presence of a viral envelope and the `12` in the seventh position identifies HIV-1 as interacting with its hsot by modulating host morphology or physiology, negative regulation of viral processes and regulating the hosts viral response. 
+An example of a barcode is  `1.0.0.0.1.0.12.0` which is the barcode for HIV. The first value indicates the presence of an RNA-directed DNA polymerase complex. Each `0` indicates the lack of any identified protein associated with that process, in this case that includes integrase, capsid proteins, tail proteins, host entry and host exit processes. The `1` in the fifth position indicates the presence of a viral envelope and the `12` in the seventh position identifies HIV-1 as interacting with its hsot by modulating host morphology or physiology, negative regulation of viral processes and regulating the hosts viral response. 
 
 
 ## IVON annotation
